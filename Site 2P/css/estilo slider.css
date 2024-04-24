@@ -1,0 +1,96 @@
+.slider {   
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slides{
+    width: 400%;
+    height: 150%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    margin-top: 20px;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.label{
+    position: absolute;
+    width: 50%;
+    margin-top: -2%;
+    display: flex;
+    justify-content: center;
+}
+.manual{
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.auto div{
+    border: 2px rgb(142, 10, 21);
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.auto{
+    position: absolute;
+    width: 50%;
+    margin-top: 32.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.auto div:not(:last-child){
+    margin-right: 43px;
+}
+
+#radio1:checked ~ .auto .autobtn1{
+    background-color: rgb(142, 10, 21);
+}
+
+#radio2:checked ~ .auto .autobtn2{
+    background-color: rgb(142, 10, 21);
+}
+
+#radio3:checked ~ .auto .autobtn3{
+    background-color: rgb(142, 10, 21);
+}

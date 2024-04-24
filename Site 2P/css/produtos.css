@@ -1,0 +1,43 @@
+.produtos{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.preço{
+    font-size: 1em;
+}
+
+.compre{
+    display: inline-block;
+    background-color: rgb(142, 10, 21);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: auto;  
+}
+
+.compre:hover, .compre:focus {
+    background-color: rgba(142, 10, 21, 0.5);
+}
+
+.mkt{
+    background-color: #fff;
+    border-radius: 10px;
+    outline: 1px solid rgba(142, 10, 21, 0.5);
+    outline-offset: -8px;
+    box-shadow: 5px 5px 20px rgba(85, 20, 51, 1);
+    position: relative;
+    overflow: hidden;
+
+}
+.foto-camisa{
+    object-fit: cover;
+    transition: transform .75s;
+    border-radius: 10px;
+}
+
+.mkt:hover .foto-camisa{
+    transform: scale(1.15);    
+}
